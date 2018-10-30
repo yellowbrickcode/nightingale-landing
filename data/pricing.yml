@@ -1,0 +1,40 @@
+enable : true
+heading : Nightingale pricing tiers
+content : Free to get started with, Nightingale will offer great value to your organisation as you move through your data science journey.
+pricingItem : 
+  - title : Planner
+    icon : ti-gift
+    value : £0
+    validity : month
+    btnText : Buy Now
+    btnURL : '#'
+    serviceList : 
+      - listItem : Partner recommendation engine
+      - listItem : Assess and manage your data science readiness
+      
+  - title : Adopter
+    icon : ti-key
+    value : £1,000
+    validity : month
+    btnText : Buy Now
+    btnURL : '#'
+    serviceList : 
+      - listItem : Partner recommendation engine
+      - listItem : Assess and manage your data science readiness
+      - listItem : Bring your own data turnkey projects
+      - listItem : Data Science training platform
+      
+  - title : Maintainer
+    icon : ti-medall
+    value : £2,000
+    validity : month
+    btnText : Buy Now
+    btnURL : '#'
+    serviceList : 
+      - listItem : Partner recommendation engine
+      - listItem : Assess and manage your data science readiness
+      - listItem : Bring your own data turnkey projects
+      - listItem : Data Science training platform
+      - listItem : Certification programs and new starter inductions
+      - listItem : Data Science workflow monitoring and recommendations
+      - listItem : Additional turnkey projects

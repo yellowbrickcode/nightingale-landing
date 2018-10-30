@@ -1,3 +1,3 @@
-[submodule "themes/hugo-fresh"]
-	path = themes/hugo-fresh
-	url = https://github.com/lucperkins/hugo-fresh.git
+[submodule "themes/biztrox-hugo"]
+	path = themes/biztrox-hugo
+	url = git@github.com:lockedata/biztrox-hugo.git
