@@ -1,7 +1,7 @@
-baseURL = "https://nightingalehub.com"
-languageCode = "en-gb"
-title = "Nightingale"
-theme = "biztroz-hugo"
+baseURL = "http://example.org/"
+languageCode = "en-us"
+title = "Biztrox"
+theme = "biztrox-hugo"
 summaryLength = "20"
 
 # navigation
@@ -13,7 +13,7 @@ summaryLength = "20"
     weight = 2
     
     [[menu.nav]]
-    name = "Features"
+    name = "Service"
     URL = "/service"
     weight = 3
     
@@ -44,9 +44,9 @@ summaryLength = "20"
 
 
 [params]
-logo = "images/Nightingale-Small.svg"
-mail = "info@nightingalehub.com"
-mobile = "+44"
+logo = "images/logo.png"
+mail = "info@companyname.com"
+mobile = "1234565523"
 searchIcon = "ti-search"
 home = "Home"
 # google map
@@ -58,54 +58,56 @@ mapMarker = "images/marker.png"
     # Quote Button
     [params.quoteBtn]
     enable = true
-    btnText = "sign up free"
+    btnText = "get a quote"
     btnURL = "#"
 
     # about
     [params.about]
     enable = true
     bgImage = "images/background/about-bg.jpg"
-    title = "How does Nightingale help?"
-    description = "Nightingale provides you with a single platform for managing your organisation's adoption of data science."
+    title = "Who We Are?"
+    description = "Excepteur sint occaecat cupidatat non proident sunt culpa qui officia deserunt mollit anim id est laborum."
     [params.about.btn]
     enable = true
-    btnText = "Learn More"
+    btnText = "Explore More"
     btnURL = "#"
 
         [[params.about.listLeft]]
-        listItem = "Find great partners who can help you"
+        listItem = "Business Services"
 
         [[params.about.listLeft]]
-        listItem = "[COMING SOON] Assess your data science readiness"
+        listItem = "Audit & Assurance"
         
         [[params.about.listLeft]]
-        listItem = "[COMING SOON] See tailored recommended actions to address gaps in your readiness"
+        listItem = "IT Control Solutions"
 
         [[params.about.listRight]]
-        listItem = "[COMING SOON] Use bring your own data machine learning solutions to instantly add value"
+        listItem = "Business Services"
 
         [[params.about.listRight]]
-        listItem = "[COMING SOON] Upskill your organisation with data science training"
-
+        listItem = "Audit & Assurance"
+        
+        [[params.about.listRight]]
+        listItem = "IT Control Solutions"
 
     # promo video
     [params.promoVideo]
     enable = true
-    heading = "We support you on <em>your</em> journey"
+    heading = "We Are Alawys <br> Comited"
     videoURL = "https://www.youtube.com/watch?v=6ZfuNTqbHE8"
-    title = "See how we can help you"
+    title = "Lorem ipsum dolor <br> sit amet con."
 
     # cta
     [params.cta]
     enable = true
     bgImage = "images/background/cta.jpg"
-    title = "Nightingale helps you succeed your way"
-    btnText = "Free sign up"
+    title = "Biztrox give the smart solution for your business"
+    btnText = "get a quote"
     btnURL = "#"
 
     # clients Logo Slider
     [params.logoSlider]
-    enable = false
+    enable = true
         [[params.logoSlider.sliderItem]]
         image = "images/client-logo/client-logo-1.png"
         URL = "#"
@@ -113,34 +115,73 @@ mapMarker = "images/marker.png"
         [[params.logoSlider.sliderItem]]
         image = "images/client-logo/client-logo-2.png"
         URL = "#"
-
+        
+        [[params.logoSlider.sliderItem]]
+        image = "images/client-logo/client-logo-3.png"
+        URL = "#"
+        
+        [[params.logoSlider.sliderItem]]
+        image = "images/client-logo/client-logo-4.png"
+        URL = "#"
+        
+        [[params.logoSlider.sliderItem]]
+        image = "images/client-logo/client-logo-5.png"
+        URL = "#"
+        
+        [[params.logoSlider.sliderItem]]
+        image = "images/client-logo/client-logo-1.png"
+        URL = "#"
+        
+        [[params.logoSlider.sliderItem]]
+        image = "images/client-logo/client-logo-2.png"
+        URL = "#"
+        
+        [[params.logoSlider.sliderItem]]
+        image = "images/client-logo/client-logo-3.png"
+        URL = "#"
+        
+        [[params.logoSlider.sliderItem]]
+        image = "images/client-logo/client-logo-4.png"
+        URL = "#"
+        
+        [[params.logoSlider.sliderItem]]
+        image = "images/client-logo/client-logo-5.png"
+        URL = "#"
 
     # footer
     [params.footer]
-    logo = "images/Nightingale-Small.svg"
-    content = "Nightingale is a data science accelerator platform designed to give you a convenient, informative, and intuitive platform to manage your data science readiness and get value quickly."
+    logo = "images/logo-footer.png"
+    content = "Lorem ipsum dolor amet consectetur adipisicing elit sed eiusm tempor incididunt labore dolore magna aliqua enim."
 
     # service links
     services = "Services"
     
     # quickLinks
-    quickLink = "Quick Links"
+    quickLink = "Quick Link"
 
     # subscribe
-    subscribe = "Get updates"
-    subscribeContent = "Nightingale is an evolving solution so sign up to our newsletter to stay up to date."
+    subscribe = "Subscribe Us"
+    subscribeContent = "Lorem ipsum dolor sit amet, consect etur adipisicing. elit sed do eiusmod."
 
     # copyright
-    copyright = "Locke Data Ltd</span> &copy; 2018 All Right Reserved"
+    copyright = "Bizpro</span> &copy; 2017 All Right Reserved"
 
+        # social icon
+        [[params.footer.socialIcon]]
+        icon = "ti-facebook"
+        URL = "#"
 
         [[params.footer.socialIcon]]
         icon = "ti-twitter-alt"
-        URL = "//twitter.com/nightingale_ds"
-                
+        URL = "#"
+        
+        [[params.footer.socialIcon]]
+        icon = "ti-vimeo-alt"
+        URL = "#"
+        
         [[params.footer.socialIcon]]
         icon = "ti-linkedin"
-        URL = "//www.linkedin.com/company/locke-data/"
+        URL = "#"
 
         # service links
         [[params.footer.service]]
@@ -156,7 +197,7 @@ mapMarker = "images/marker.png"
         URL = "#"
         
         [[params.footer.service]]
-        serviceItem = "Features"
+        serviceItem = "Service"
         URL = "#"
         
         [[params.footer.service]]
@@ -177,7 +218,7 @@ mapMarker = "images/marker.png"
         URL = "#"
         
         [[params.footer.quickLinks]]
-        quickLinkItem = "Features"
+        quickLinkItem = "Service"
         URL = "#"
         
         [[params.footer.quickLinks]]
@@ -202,14 +243,21 @@ mapMarker = "images/marker.png"
             URL = "#"
 
     # share blog post
+    [[params.sharePost]]
+    icon = "ti-facebook"
+    URL = "#"
     
     [[params.sharePost]]
     icon = "ti-twitter-alt"
-    URL = "//twitter.com/nightingale_ds"
+    URL = "#"
     
     [[params.sharePost]]
     icon = "ti-linkedin"
-    URL = "//www.linkedin.com/company/locke-data/"
+    URL = "#"
+    
+    [[params.sharePost]]
+    icon = "ti-google"
+    URL = "#"
         
 
 
