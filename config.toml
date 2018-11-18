@@ -44,7 +44,7 @@ summaryLength = "20"
 
 
 [params]
-logo = "images/Nightingale-Small.svg"
+logo = "images/Nightingale-Logo.svg"
 mail = "info@nightingalehub.com"
 mobile = "+44"
 searchIcon = "ti-search"
