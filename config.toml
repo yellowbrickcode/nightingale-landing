@@ -54,11 +54,14 @@ gmapAPI = "https://maps.googleapis.com/maps/api/js?key=AIzaSyBI14J_PNWVd-m0gnUBk
 mapLatitude = "51.5223477"
 mapLongitude = "-0.1622023"
 mapMarker = "images/marker.png"
+# add extra-css
+custom_css = ['css/custom.css']
+        
 
     # Quote Button
     [params.quoteBtn]
     enable = true
-    btnText = "sign up free"
+    btnText = "join us now!"
     btnURL = "#"
 
     # about
@@ -210,6 +213,7 @@ mapMarker = "images/marker.png"
     [[params.sharePost]]
     icon = "ti-linkedin"
     URL = "//www.linkedin.com/company/locke-data/"
-        
+    
+
 
 
