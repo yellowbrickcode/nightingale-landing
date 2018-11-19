@@ -56,6 +56,8 @@ mapLongitude = "-0.1622023"
 mapMarker = "images/marker.png"
 # add extra-css
 custom_css = ['css/custom.css']
+# add custom-js
+custom_js = ['js/custom.js']
         
 
     # Quote Button
