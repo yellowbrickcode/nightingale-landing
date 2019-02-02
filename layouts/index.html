@@ -1,0 +1,72 @@
+{{ define "title" }}{{ end}}
+{{ define "header_css" }}{{ end }}
+{{ define "body_classes" }}page-home{{ end }}
+{{ define "header_classes" }}header-transparent{{ end }}
+
+{{ define "main" }}
+
+
+
+<div class="container pt-10">
+  <div class="call">
+    <div class="call-box-top col-9">
+      {{ .Site.Params.Cta_title }}
+    </div>
+    <div class="call-box-bottom col-3">
+      <a href="{{ .Site.Params.Cta_url }}" class="button">{{ .Site.Params.Cta_button }}</a>
+    </div>
+  </div>
+</div>
+<div class="intro pt-12 pb-2">
+  <div class="container">
+    {{ .Content }}
+  </div>
+</div>
+{{ $benefits := where (where .Site.RegularPages "Type" "benefits") ".Params.featured" true }}
+{{if gt (len $benefits) 0}}
+<div class="container pt-5 pb-5 pt-md-7 pb-md-7">
+  <div class="row justify-content-start">
+    <div class="col-12">
+      <h2 class="title-3 text-dark mb-3">Why you should adopt data science</h2>
+    </div>
+    {{ $benefits := where (where .Site.RegularPages "Type" "benefits") ".Params.featured" true }}
+    {{ range first 6 (sort $benefits ".Params.weight") }}
+    <div class="col-12 col-md-6 col-lg-4 mb-2">
+      <div class="feature {{ if .Params.comingsoon }} feature-soon {{ end }}">
+        <div class="feature-content">
+        <h2 class="feature-title">{{.Title}}</h2>
+        <p>{{ .Description }}</p>
+      </div>
+      </div>
+    </div>
+    {{end}}
+    <div class="col-12 text-center">
+      <a class="button button-primary" href="/benefits">View more benefits</a>
+    </div>
+  </div>
+</div>
+{{end}}
+<div class="container pt-8 pt-md-10">
+  <div class="row justify-content-center">
+    <div class="col-12">
+      <h2 class="title-3 text-dark mb-4">How Nightingale HQ helps you</h2>
+    </div>
+    {{ $features := where (where .Site.RegularPages "Type" "features") ".Params.featured" true }}
+    {{ range first 6 (sort $features ".Params.weight") }}
+    <div class="col-12 col-md-6 col-lg-4 mb-2">
+        <div class="feature {{ if .Params.comingsoon }} feature-soon {{ end }}">
+          {{ if .Params.image }}<div class="feature-image"><img alt="{{ .Params.title }} logo" src="{{ .Params.image }}" /></div> {{ end }}
+          {{ .Render "summary" }}
+        </div>
+      </div>
+    {{end}}
+  </div>
+</div>
+
+
+
+
+{{ end }}
+
+{{ define "footer_js" }}
+{{ end }}

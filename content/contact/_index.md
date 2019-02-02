@@ -1,5 +1,6 @@
 ---
-title: "Contact"
-date: 2018-07-12T18:19:33+06:00
-bgImage: images/background/page-title.jpg
+title: 'Contact Us'
+date: 2018-02-22T17:01:34+07:00
 ---
+
+If you need to reach out to us, get in touch.

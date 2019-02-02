@@ -1,0 +1,30 @@
+{{ define "header_css" }}{{ end }}
+{{ define "body_classes" }}page-services-list{{ end }}
+{{ define "header_classes" }}{{ end }}
+
+{{ define "main" }}
+<div class="intro">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        {{ .Content }}
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container pb-6">
+  <div class="row">
+    {{ range .Pages.ByWeight }}
+    <div class="col-12 col-md-6 col-lg-4 mb-2">
+        <div class="feature {{ if .Params.comingsoon }} feature-soon {{ end }}">
+          <div class="feature-content"><a href="{{.Permalink}}">
+          <h2 class="feature-title">{{.Title}}</h2></a>
+          <p>{{ .Description }}</p>
+        </div>
+        </div>
+      </div>
+    {{ end }}
+  </div>
+</div>
+{{ end }}

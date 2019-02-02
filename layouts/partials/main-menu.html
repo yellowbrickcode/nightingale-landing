@@ -1,0 +1,22 @@
+<div id="main-menu" class="main-menu">
+  <ul>
+    {{ $currentPage := . }}
+    {{ range .Site.Menus.main }}
+    <li class="menu-item-{{ .Name | lower }}{{ if $currentPage.IsMenuCurrent "main" . }} active{{ end }}">
+      <a href="{{.URL}}">
+        {{ .Pre }}
+        <span>{{ .Name }}</span>
+      </a>
+    </li>
+    {{end}}
+    <li>
+        <a href="{{ .Site.Params.social.twitter }}" target="blank" ><img src="/images/social/twitter-square-brands.svg"  height="24px"/></a>
+      </li>
+      <li>
+        <a href="{{ .Site.Params.social.medium }}" target="blank"><img src="/images/social/medium-brands.svg"  height="24px"/></a>
+      </li>
+      <li>
+        <a href="{{ .Site.Params.social.linkedin }}" target="blank"><img src="/images/social/linkedin-brands.svg"  height="24px"/></a>
+      </li>
+  </ul>
+</div>

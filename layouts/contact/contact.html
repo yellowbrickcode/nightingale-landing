@@ -1,0 +1,48 @@
+{{ define "header_css" }}{{ end }}
+{{ define "body_classes" }}page-contact{{ end }}
+{{ define "header_classes" }}{{ end }}
+
+{{ define "main" }}
+<div class="intro intro-small">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h1>{{ .Title }}</h1>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+
+    <div class="col-12 col-md-8">
+        {{ .Content }}
+       <p> <a href="{{ .Site.Params.social.twitter }}" target="blank" ><img src="/images/social/twitter-square-brands.svg"  height="24px"/></a>
+            <a href="{{ .Site.Params.social.medium }}" target="blank"><img src="/images/social/medium-brands.svg"  height="24px"/></a>
+           <a href="{{ .Site.Params.social.linkedin }}" target="blank"><img src="/images/social/linkedin-brands.svg"  height="24px"/></a>
+</p>
+        <form name="contact" method="POST"  netlify-honeypot="human-field" data-netlify="true">
+            <p style="display: none;">
+                <label>For bots! <input name="human-field" /></label>
+              </p>
+         <p>
+          <label>Name <input type="text" name="name" /></label>
+        </p>
+        <p>
+          <label>Email <input type="email" name="email" /></label>
+        </p>
+        <p>
+          <label>Company <input type="text" name="company" /></label>
+        </p>
+        <p>
+            <label>Message <textarea name="message"></textarea></label>
+           </p>
+        <p>
+            <div data-netlify-recaptcha="true"></div>
+          <button class="button button-primary" type="submit">Send</button>
+        </p>
+      </form>
+    </div>
+  </div>
+</div>
+{{ end }}

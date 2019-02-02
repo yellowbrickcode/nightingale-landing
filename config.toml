@@ -1,221 +1,35 @@
-baseURL = "https://nightingalehub.com"
-languageCode = "en-gb"
-title = "Nightingale"
-theme = "biztroz-hugo"
-summaryLength = "20"
-
-# navigation
-[menu]
-    
-    [[menu.nav]]
-    name = "About"
-    URL = "/about"
-    weight = 2
-    
-    [[menu.nav]]
-    name = "Features"
-    URL = "/service"
-    weight = 3
-    
-    [[menu.nav]]
-    name = "Blog"
-    URL = "/blog"
-    weight = 4
-    
-    [[menu.nav]]
-    name = "Project"
-    URL = "/project"
-    weight = 5
-    
-    [[menu.nav]]
-    name = "Team"
-    URL = "/team"
-    weight = 6
-    
-    [[menu.nav]]
-    name = "Pricing"
-    URL = "/pricing"
-    weight = 7
-    
-    [[menu.nav]]
-    name = "Contact"
-    URL = "/contact"
-    weight = 8
-
+baseURL = "https://nightingalehq.ai"
+languageCode = "en-us"
+title = "Nightingale HQ"
+theme = "hugo-serif-theme"
 
 [params]
-logo = "images/Nightingale-Logo.svg"
-mail = "info@nightingalehub.com"
-mobile = "+44"
-searchIcon = "ti-search"
-home = "Home"
-# google map
-gmapAPI = "https://maps.googleapis.com/maps/api/js?key=AIzaSyBI14J_PNWVd-m0gnUBkjmhoQyNyd7nllA"
-mapLatitude = "51.5223477"
-mapLongitude = "-0.1622023"
-mapMarker = "images/marker.png"
-# add extra-css
-custom_css = ['css/custom.css']
-# add custom-js
-custom_js = ['js/custom.js']
-        
+#google_analytics_id=""
+cta_title = "We're launching soon! Be the first to hear."
+cta_url = "http://eepurl.com/ga2dmj"
+cta_button = "Sign up"
 
-    # Quote Button
-    [params.quoteBtn]
-    enable = true
-    btnText = "join us now!"
-    btnURL = "#"
+[params.social]
+twitter = "//twitter.com/nightingalehqai"
+medium = "//medium.com/nightingale-hq"
+linkedin = "//www.linkedin.com/company/nightingale-hq"
 
-    # about
-    [params.about]
-    enable = true
-    bgImage = "images/background/about-bg.jpg"
-    title = "How does Nightingale help?"
-    description = "Nightingale provides you with a single platform for managing your organisation's adoption of data science."
-    [params.about.btn]
-    enable = true
-    btnText = "Learn More"
-    btnURL = "#"
+[[menu.main]]
+	name = "Home"
+	url = "/"
+    weight = 0
 
-        [[params.about.listLeft]]
-        listItem = "Find great partners who can help you"
+[[menu.main]]
+	name = "The benefits of Data Science"
+	url = "/benefits/"
+    weight = 1
 
-        [[params.about.listLeft]]
-        listItem = "[COMING SOON] Assess your data science readiness"
-        
-        [[params.about.listLeft]]
-        listItem = "[COMING SOON] See tailored recommended actions to address gaps in your readiness"
+[[menu.main]]
+    name = "About"
+    url = "/team/"
+    weight = 2
 
-        [[params.about.listRight]]
-        listItem = "[COMING SOON] Use bring your own data machine learning solutions to instantly add value"
-
-        [[params.about.listRight]]
-        listItem = "[COMING SOON] Upskill your organisation with data science training"
-
-
-    # promo video
-    [params.promoVideo]
-    enable = true
-    heading = "We support you on <em>your</em> journey"
-    videoURL = "https://www.youtube.com/watch?v=6ZfuNTqbHE8"
-    title = "See how we can help you"
-
-    # cta
-    [params.cta]
-    enable = true
-    bgImage = "images/background/cta.jpg"
-    title = "Nightingale helps you succeed your way"
-    btnText = "Free sign up"
-    btnURL = "#"
-
-    # clients Logo Slider
-    [params.logoSlider]
-    enable = false
-        [[params.logoSlider.sliderItem]]
-        image = "images/client-logo/client-logo-1.png"
-        URL = "#"
-        
-        [[params.logoSlider.sliderItem]]
-        image = "images/client-logo/client-logo-2.png"
-        URL = "#"
-
-
-    # footer
-    [params.footer]
-    logo = "images/Nightingale-Small.svg"
-    content = "Nightingale is a data science accelerator platform designed to give you a convenient, informative, and intuitive platform to manage your data science readiness and get value quickly."
-
-    # service links
-    services = "Services"
-    
-    # quickLinks
-    quickLink = "Quick Links"
-
-    # subscribe
-    subscribe = "Get updates"
-    subscribeContent = "Nightingale is an evolving solution so sign up to our newsletter to stay up to date."
-
-    # copyright
-    copyright = "Locke Data Ltd</span> &copy; 2018 All Right Reserved"
-
-
-        [[params.footer.socialIcon]]
-        icon = "ti-twitter-alt"
-        URL = "//twitter.com/nightingale_ds"
-                
-        [[params.footer.socialIcon]]
-        icon = "ti-linkedin"
-        URL = "//www.linkedin.com/company/locke-data/"
-
-        # service links
-        [[params.footer.service]]
-        serviceItem = "Company History"
-        URL = "#"
-        
-        [[params.footer.service]]
-        serviceItem = "About Us"
-        URL = "#"
-        
-        [[params.footer.service]]
-        serviceItem = "Contact Us"
-        URL = "#"
-        
-        [[params.footer.service]]
-        serviceItem = "Features"
-        URL = "#"
-        
-        [[params.footer.service]]
-        serviceItem = "Privacy Policy"
-        URL = "#"
-
-        # quick links
-        [[params.footer.quickLinks]]
-        quickLinkItem = "Pricing"
-        URL = "#"
-        
-        [[params.footer.quickLinks]]
-        quickLinkItem = "FAQs"
-        URL = "#"
-        
-        [[params.footer.quickLinks]]
-        quickLinkItem = "Contact Us"
-        URL = "#"
-        
-        [[params.footer.quickLinks]]
-        quickLinkItem = "Features"
-        URL = "#"
-        
-        [[params.footer.quickLinks]]
-        quickLinkItem = "Privacy Policy"
-        URL = "#"
-
-        # bottom links
-        [[params.footer.links]]
-            name = "Legal"
-            URL = "#"
-            
-        [[params.footer.links]]
-            name = "Sitemap"
-            URL = "#"
-            
-        [[params.footer.links]]
-            name = "Privacy Policy"
-            URL = "#"
-            
-        [[params.footer.links]]
-            name = "Terms & Conditions"
-            URL = "#"
-
-    # share blog post
-    
-    [[params.sharePost]]
-    icon = "ti-twitter-alt"
-    URL = "//twitter.com/nightingale_ds"
-    
-    [[params.sharePost]]
-    icon = "ti-linkedin"
-    URL = "//www.linkedin.com/company/locke-data/"
-    
-
-
-
+[[menu.main]]
+    name = "Sign up"
+    url = "http://eepurl.com/ga2dmj"
+    weight = 4

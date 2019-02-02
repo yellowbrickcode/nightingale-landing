@@ -1,0 +1,22 @@
+[
+  {
+    "title": "Partners",
+    "description": "Use our partner recommendation engine to find the right people to help your organisation",
+    "image": "/features/noun_shake hand_1885509.svg"
+  },
+  {
+    "title": "Readiness",
+    "description": "Assess your current data science readiness and manage the process to reaching the next level",
+    "image": "/features/noun_Checklist_1904927.svg"
+  },
+  {
+    "title": "Learning",
+    "description": "Roll out our data science training to help your organisation understand what's achievable and how",
+    "image": "/features/noun_Learning_1951597.svg"
+  },
+  {
+    "title": "Instant projects",
+    "description": "With our Bring Your Own Data machine learning projects, you can be getting ROI from data science almost instantly",
+    "image": "/features/noun_Project_861273.svg"
+  }
+]
