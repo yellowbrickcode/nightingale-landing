@@ -7,7 +7,7 @@
   <title>{{ block "title" . }}{{ .Title }} - {{ .Site.Title }}{{ end }}</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" href="{{ .Site.BaseURL }}favicon.png">
-
+  {{ partial "google-analytics.html" . }}
   <!-- CSS -->
   {{- $inServerMode := .Site.IsServer }}
   {{- $cssTarget := "css/style.css" }}
@@ -16,12 +16,14 @@
   <link rel="stylesheet" href="{{ ($style | minify | fingerprint).RelPermalink }}">
 
   {{ block "header_css" . }}{{ end }}
-<!-- Start of HubSpot Embed Code -->
-<script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/5410772.js"></script>
-<!-- End of HubSpot Embed Code -->
+  {{ partial "hubspot" . }}
 </head>
 
 <body class='page {{ block "body_classes" . }}{{ end }}'>
+  <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TC6CSPV"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
   {{ partial "main-menu-mobile.html" . }}
   <div id="wrapper" class="wrapper">
     {{ partial "header.html" . }}
@@ -43,7 +45,7 @@
   <script type="text/javascript" src="{{ ($scripts | minify | fingerprint).RelPermalink }}"></script>
   {{ end }}
 
-  {{ partial "google-analytics.html" . }}
+
 
 </body>
 </html>
