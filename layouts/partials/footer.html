@@ -6,8 +6,9 @@
           <h3 class="footer-title">{{.Site.Title}}</h3>
           {{ partial "social.html" . }}
           <ul class="footer-menu">
-            <li><a href="/">Home</a></li>
-            <li><a href="/contact">Contact</a></li>
+            <li><a href="{{ .Site.BaseURL }}">Home</a></li>
+            <li><a href="{{ .Site.BaseURL }}contact">Contact</a></li>
+            <li><a href="{{ .Site.BaseURL }}partners">Register as a partner</a></li>
             <li class="copyright">© {{ now.Format "2006" }} {{.Site.Title}} Ltd</li>
           </ul>
         </div>
