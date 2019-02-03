@@ -4,6 +4,14 @@
   @include media-breakpoint-up(md) {
     display: block;
   }
+  .social {
+    @include media-breakpoint-up(md) {
+      display: none;
+    }
+    @include media-breakpoint-up(lg) {
+      display: inherit;
+    }
+  }
   > ul {
     height: inherit;
     display: flex;
