@@ -16,7 +16,6 @@
   <link rel="stylesheet" href="{{ ($style | minify | fingerprint).RelPermalink }}">
 
   {{ block "header_css" . }}{{ end }}
-  {{ partial "hubspot" . }}
 </head>
 
 <body class='page {{ block "body_classes" . }}{{ end }}'>
