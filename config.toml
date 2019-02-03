@@ -1,4 +1,4 @@
-baseURL = "https://nightingalehq.ai/"
+baseURL = "https://nightingalehub.com/"
 languageCode = "en-us"
 title = "Nightingale HQ"
 theme = "hugo-serif-theme"
