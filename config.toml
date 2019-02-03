@@ -1,4 +1,4 @@
-baseURL = "https://nightingalehub.com/"
+baseURL = "https://nightingalehq.ai/"
 languageCode = "en-us"
 title = "Nightingale HQ"
 theme = "hugo-serif-theme"
@@ -6,7 +6,7 @@ theme = "hugo-serif-theme"
 [params]
 #google_analytics_id=""
 cta_title = "We're launching soon! Be the first to hear."
-cta_url = "http://eepurl.com/ga2dmj"
+cta_url = "https://share.hsforms.com/1MU7uKqACTySR4JcmRZodog37yz8"
 cta_button = "Sign up"
 
 [params.social]
@@ -31,5 +31,5 @@ linkedin = "//www.linkedin.com/company/nightingale-hq"
 
 [[menu.main]]
     name = "Sign up"
-    url = "http://eepurl.com/ga2dmj"
+    url = "https://share.hsforms.com/1MU7uKqACTySR4JcmRZodog37yz8"
     weight = 4
