@@ -24,6 +24,9 @@ We're an early-stage startup currently part of the [Accelerated Growth Programme
 - [Registered in England and Wales: 11725529](https://beta.companieshouse.gov.uk/company/11725529)
 - First Floor - 29 Gelliwastad Road, Pontypridd, United Kingdom, CF37 2BN
 
+## How we make our money
+Connecting you to the right partner for your needs means that the partner earns money and, best for them, they earn it helping those who are they best suited to help. We take a commission for these successful introductions.
+
 # Meet The Team
 
 Our founders are experts in their respective fields, data science and software engineering,who understand what it takes to integrate data science into organisations.
