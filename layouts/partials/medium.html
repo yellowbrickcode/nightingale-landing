@@ -3,7 +3,7 @@
 
 {{ range $rssJ.items }}
     {{ $post := . }}
-    <div class="col-12 col-md-6 col-lg-6 mb-2 pb-8 blog" style="background-image: url({{ $post.thumbnail }});">
+    <div class="col-12 col-md-6 col-lg-4 mb-2 mr-2 pb-8 blog" style="background-image: url({{ $post.thumbnail }});">
     <a href="{{ $post.link }}" target="_blank" alt="{{ $post.title }}">
     <h2>{{ $post.title }}</h2>
     </a>
