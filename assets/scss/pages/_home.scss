@@ -2,20 +2,21 @@
   background-image: url('../images/magnifier.svg');
   background-repeat: no-repeat;
   background-size: 150%;
-  background-position: 49px -40px;
+  background-position: 100% 40px;
   @include media-breakpoint-up(sm) {
     background-size: 100%;
-    background-position: 159px -40px;
+    background-position: 100% 40px;
   }
   @include media-breakpoint-up(md) {
     background-size: 100%;
-    background-position: 100% -50px;
+    background-position: 100% 50px;
   }
   @include media-breakpoint-up(lg) {
     background-size: 100%;
-    background-position: 100% -70px;
+    background-position: 100% 68px;
   }
   .call {
+    margin-top: 30px;
     position: relative;
     overflow: hidden;
     background-color: #ffba49;
