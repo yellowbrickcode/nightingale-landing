@@ -1,0 +1,21 @@
+// Type Styling for body content
+.blog {
+  
+  border-radius: 5px;
+  background-size: cover;
+  h2 {
+    font-family: $font-family-heading;
+    line-height: 1.4;
+    font-weight: 400;
+    color: white;
+    @include media-breakpoint-up(md) {
+      line-height: 1.4;
+    }
+  }
+  h3 {
+    color: white;
+    @include media-breakpoint-up(md) {
+      line-height: 1.4;
+    }
+  }
+}

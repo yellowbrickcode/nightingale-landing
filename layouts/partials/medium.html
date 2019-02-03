@@ -1,0 +1,12 @@
+{{ $rssJ := getJSON "https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fmedium.com%2Ffeed%2Fnightingale-hq" }}
+
+
+{{ range $rssJ.items }}
+    {{ $post := . }}
+    <div class="col-12 col-md-6 col-lg-6 mb-2 pb-8 blog" style="background-image: url({{ $post.thumbnail }});">
+    <a href="{{ $post.link }}" target="_blank" alt="{{ $post.title }}">
+    <h2>{{ $post.title }}</h2>
+    </a>
+    <h3>{{ $post.author }}</h3>
+    </div>
+{{ end }}
