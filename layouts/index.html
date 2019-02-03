@@ -56,7 +56,10 @@
     <div class="col-12 col-md-6 col-lg-4 mb-2">
         <div class="feature {{ if .Params.comingsoon }} feature-soon {{ end }}">
           {{ if .Params.image }}<div class="feature-image"><img alt="{{ .Params.title }} logo" src="{{ .Params.image }}" /></div> {{ end }}
-          {{ .Render "summary" }}
+         <a href="{{ .Permalink }}"><h2 class="feature-title">{{.Title}}</h2></a>
+         <div  class="feature-content">
+         <p>{{ .Description }}</p>
+        </div>
         </div>
       </div>
     {{end}}
