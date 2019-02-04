@@ -21,29 +21,42 @@
     font-size: 2.4rem;
     line-height: 1.2;
     font-family: $font-family-heading;
+    margin-top: 100px;
+    padding-bottom: 2rem;
     width: 70%;
+    @include media-breakpoint-up(xs) {
+      width: 100%;
+      margin-top: 0;
+    }
     @include media-breakpoint-up(sm) {
-      width: 70%;
+      width: 100%;
+      margin-top: 0;
     }
     @include media-breakpoint-up(md) {
       font-size: 3rem;
-      width: 70%;
+      width: 80%;
+      margin-top: 50px;
     }
     @include media-breakpoint-up(lg) {
       font-size: 3rem;
-      width: 50%;
+      width: 70%;
+      margin-top: 100px;
     }
   }
   p {
     width: 100%;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     line-height: 1.4;
+    margin-bottom: 1.5rem;
     color: $secondary;
+    @include media-breakpoint-up(xs) {
+      width: 100%;
+    }
     @include media-breakpoint-up(sm) {
-      width: 70%;
+      width: 100%;
     }
     @include media-breakpoint-up(md) {
-      width: 60%;
+      width: 80%;
     }
     @include media-breakpoint-up(lg) {
       width: 60%;

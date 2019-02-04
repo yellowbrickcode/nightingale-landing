@@ -3,9 +3,7 @@ title: 'Home'
 date: 2018-02-12T15:37:57+07:00
 ---
 
-# Nightingale HQ
-
-*Help your business stay competitive by adopting data science.*
+# Help your business stay competitive by adopting data science
 
 You've probably been bombarded recently with buzzwords like advanced analytics, machine learning, deep learning, and AI. I would imagine it's left you feeling confused, overwhelmed, and probably rather skeptical right now!
 

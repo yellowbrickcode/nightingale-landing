@@ -4,6 +4,14 @@
   @include media-breakpoint-up(md) {
     display: block;
   }
+  .social {
+    @include media-breakpoint-up(md) {
+      display: none;
+    }
+    @include media-breakpoint-up(lg) {
+      display: inherit;
+    }
+  }
   > ul {
     height: inherit;
     display: flex;
@@ -24,29 +32,26 @@
         height: inherit;
         display: inline-block;
         padding: 0;
-        font-size: 0.9rem;
+        font-size: 0.95rem;
         font-weight: 400;
         text-transform: uppercase;
         color: inherit;
         padding: 10px 14px 10px 14px;
         text-decoration: none;
         &:hover {
-          background: $primary;
-          color: #fff;
+          color: $secondary;
           text-decoration: none;
         }
       }
     }
     > li.active {
       > a {
-        background: $primary;
         text-decoration: none;
-        color: #fff;
+        color: $secondary;
         &:hover {
           text-decoration: none;
-          background: $primary;
           transition: all 225ms ease-in 0s;
-          color: #fff;
+          color: $secondary;
         }
         span {
           display: block;
