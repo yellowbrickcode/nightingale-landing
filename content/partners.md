@@ -11,4 +11,4 @@ We'll collect information about these businesses and recommend the most suited p
 
 At least initially, we will not be charging commission as we develop our capabilities and start proving value to both businesses and partners. 
 
-[Partner signup](http://eepurl.com/ga2dmj)
+[Partner signup](https://share.hsforms.com/18KCqZn6TRHGMdcCHg8XDGg37yz8)
