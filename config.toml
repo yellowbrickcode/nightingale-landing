@@ -14,6 +14,17 @@ twitter = "//twitter.com/nightingalehqai"
 medium = "//medium.com/nightingale-hq"
 linkedin = "//www.linkedin.com/company/nightingale-hq"
 
+[params.twitter]
+card = "player"
+title = "Nightingale HQ"
+site = "@nightingalehqai"
+description = "Helping businesses build and implement a data strategy"
+video = "container.html"
+player_width = 1280
+player_height = 960
+image = "images/doggothumbnail.jpg"
+image_alt = "Playful dog getting ready"
+
 [[menu.main]]
 	name = "Home"
 	url = "/"
