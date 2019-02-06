@@ -20,8 +20,8 @@ title = "Nightingale HQ"
 site = "@nightingalehqai"
 description = "Helping businesses build and implement a data strategy"
 video = "container.html"
-player_width = 1280
-player_height = 960
+player_width = 1920
+player_height = 1080
 image = "images/doggothumbnail.jpg"
 image_alt = "Playful dog getting ready"
 
