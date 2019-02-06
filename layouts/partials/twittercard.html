@@ -3,7 +3,7 @@
 <meta name="twitter:site" content="{{- .site -}}">
 {{ if ne .card "app" -}}
 <meta name="twitter:title" content="{{- .title -}}">
-<meta name="twitter:image" content="{{ .Site.BaseURL }}{{- .image -}}">
+<meta name="twitter:image" content="{{- .image | absURL -}}">
 {{ with .image_alt -}}<meta name="twitter:image:alt" content="{{- . -}}">{{- end }}
 {{- end }}
 {{ with .creator -}}<meta name="twitter:creator" content="{{- . -}}">{{- end }}
@@ -23,7 +23,7 @@
 
 {{- if eq .card "player" }}
 {{ with .description }}<meta name="twitter:description" content="{{- . -}}">{{ end }}
-<meta name="twitter:player" content="{{ .Site.BaseURL }}{{- .video -}}">
+<meta name="twitter:player" content="{{- .video | absURL -}}">
 {{ with .player_width }}<meta name="twitter:player:width" content="{{- . -}}">{{ end }}
 {{ with .player_height }}<meta name="twitter:player:height" content="{{- . -}}">{{ end }}
 {{- end }}
