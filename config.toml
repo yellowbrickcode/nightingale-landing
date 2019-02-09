@@ -6,7 +6,7 @@ theme = "hugo-serif-theme"
 [params]
 #google_analytics_id=""
 cta_title = "We're launching soon! Be the first to hear."
-cta_url = "https://share.hsforms.com/1MU7uKqACTySR4JcmRZodog37yz8"
+cta_url = "register"
 cta_button = "Sign up"
 
 [params.social]
@@ -32,15 +32,15 @@ image_alt = "Playful dog getting ready"
 
 [[menu.main]]
 	name = "The benefits of Data Science"
-	url = "/benefits/"
+	url = "benefits"
     weight = 2
 
 [[menu.main]]
     name = "About"
-    url = "/team/"
+    url = "team"
     weight = 3
 
 [[menu.main]]
     name = "Sign up"
-    url = "https://share.hsforms.com/1MU7uKqACTySR4JcmRZodog37yz8"
+    url = "register"
     weight = 4

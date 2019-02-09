@@ -11,4 +11,10 @@ We'll collect information about these businesses and recommend the most suited p
 
 At least initially, we will not be charging commission as we develop our capabilities and start proving value to both businesses and partners. 
 
-[Partner signup](https://share.hsforms.com/18KCqZn6TRHGMdcCHg8XDGg37yz8)
+<script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/shell.js"></script>
+<script>
+  hbspt.forms.create({
+	portalId: "5410772",
+	formId: "f0a0aa66-7e93-4471-8c75-c08783c5c31a"
+});
+</script>
