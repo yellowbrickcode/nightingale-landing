@@ -32,15 +32,15 @@ image_alt = "Playful dog getting ready"
 
 [[menu.main]]
 	name = "The benefits of Data Science"
-	url = "benefits"
+	url = "/benefits/"
     weight = 2
 
 [[menu.main]]
     name = "About"
-    url = "team"
+    url = "/team/"
     weight = 3
 
 [[menu.main]]
     name = "Sign up"
-    url = "register"
+    url = "/register/"
     weight = 4
